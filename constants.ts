@@ -1,4 +1,5 @@
 
+
 import { NavItem, PortfolioItem, Project, Testimonial } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
@@ -15,7 +16,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 1, 
     title: 'Mara Sunset', 
     category: 'Travel', 
-    imageUrl: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1200&auto=format&fit=crop', 
+    imageUrl: 'https://images.unsplash.com/photo-1547471080-7cc2d5d88e93?q=80&w=1200&auto=format&fit=crop', 
     size: 'large' 
   },
   { 
@@ -57,7 +58,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 7,
     title: 'Safari Lodge Luxury',
     category: 'Real Estate',
-    imageUrl: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1618557343449-14693a0339a6?q=80&w=1200&auto=format&fit=crop',
     size: 'large'
   },
   {
@@ -92,7 +93,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 12,
     title: 'Wildlife Protector',
     category: 'Conservation',
-    imageUrl: 'https://images.unsplash.com/photo-1518709414768-a88981a45e5d?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1618231189315-30a21456fb4f?q=80&w=1000&auto=format&fit=crop',
     size: 'small'
   },
   {
@@ -106,7 +107,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 14,
     title: 'Traditional Celebration',
     category: 'Event',
-    imageUrl: 'https://images.unsplash.com/photo-1529328243610-d88691f1a58a?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1604325294565-1a8771383921?q=80&w=1200&auto=format&fit=crop',
     size: 'large'
   }
 ];
@@ -116,19 +117,19 @@ export const PROJECTS: Project[] = [
     id: 1,
     title: 'Golden Hour Portrait Series',
     description: 'A heartfelt collection of portraits captured during the warm glow of sunset. Each frame was designed to highlight natural beauty, emotion, and authentic expression — celebrating people in their most effortless and honest moments.',
-    imageUrl: 'https://images.unsplash.com/photo-1551406856-f83ce90558b9?q=80&w=1600&auto=format&fit=crop'
+    imageUrl: 'https://images.unsplash.com/photo-1520990044747-40910f461159?q=80&w=1600&auto=format&fit=crop'
   },
   {
     id: 2,
     title: 'Urban Romance',
     description: 'A cinematic exploration of love in the city — blending architecture, movement, and connection into a series of images that feel intimate and alive.',
-    imageUrl: 'https://images.unsplash.com/photo-1516962215378-7fa2e137ae91?q=80&w=1600&auto=format&fit=crop'
+    imageUrl: 'https://images.unsplash.com/photo-1594912239384-a1420526a0a0?q=80&w=1600&auto=format&fit=crop'
   },
   {
     id: 3,
     title: 'The Minimalist Studio Collection',
     description: 'Clean, modern, and intentional. This studio project focuses on simplicity, shape, and light — revealing how powerful minimalism can be when paired with emotion.',
-    imageUrl: 'https://images.unsplash.com/photo-1502160163363-23a780b9c565?q=80&w=1600&auto=format&fit=crop'
+    imageUrl: 'https://images.unsplash.com/photo-1611601322175-875848c84af6?q=80&w=1600&auto=format&fit=crop'
   }
 ];
 
