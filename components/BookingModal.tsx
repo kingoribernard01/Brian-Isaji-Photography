@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { X, Calendar, Clock, User, Mail, ArrowRight, ArrowLeft, Check } from 'lucide-react';
 
 const services = [
-  { name: 'Wedding', description: 'Full-day coverage for your special day.' },
-  { name: 'Portrait', description: 'Personal, family, or professional sessions.' },
-  { name: 'Event', description: 'Corporate functions, parties, and celebrations.' },
-  { name: 'Commercial', description: 'Branding, product, and lifestyle shoots.' },
-  { name: 'Real Estate', description: 'Architectural and property photography.' },
-  { name: 'Other', description: 'Custom projects and general inquiries.' },
+  { name: 'Visual Storytelling & Photography', description: 'High-end photography for events, portraits, and commercial projects.' },
+  { name: 'Photo Editing & Post-Production', description: 'Professional retouching, color grading, and image enhancement.' },
+  { name: 'Video Editing', description: 'Cinematic editing and sound design for compelling video narratives.' },
+  { name: 'Content & Creative Consultancy', description: 'Strategic advice on brand identity and visual storytelling.' },
+  { name: 'Editorial & Communication Support', description: 'Refining narratives to complement your visual content.' },
+  { name: 'Project & Workflow Support', description: 'Optimizing creative processes and asset management.' },
 ];
 
 interface BookingModalProps {
@@ -102,7 +102,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                     className="p-4 border border-white/10 rounded-lg text-left group hover:border-accent hover:bg-white/5 transition-all duration-300"
                   >
                     <h4 className="font-bold text-white text-base mb-1 group-hover:text-accent">{s.name}</h4>
-                    <p className="text-xs text-gray-400">{s.description}</p>
+                    <p className="text-xs text-gray-400 leading-tight">{s.description}</p>
                   </button>
                 ))}
               </div>
@@ -124,9 +124,12 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
           {step === 3 && (
             <form action="https://formsubmit.co/brianisaji40@gmail.com" method="POST">
                 <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="New Booking Request" />
+                <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="Service" value={formData.service} />
                 <input type="hidden" name="Preferred Date" value={formData.date} />
                 <input type="hidden" name="Preferred Time" value={formData.time} />
+                
                 <h3 className="text-xl font-semibold text-gray-200 mb-6 text-center">Your Contact Information</h3>
                 <div className="space-y-6">
                     <div>

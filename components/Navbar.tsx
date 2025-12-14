@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
                 BRIAN ISAJI
               </span>
               <span className="text-[10px] font-sans tracking-[0.4em] text-gray-400 uppercase mt-1.5 group-hover:text-white transition-colors duration-300 hidden sm:block pl-0.5">
-                Photography
+                Visual Storytelling
               </span>
             </div>
           </a>

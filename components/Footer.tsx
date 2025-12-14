@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram, Facebook, Twitter, Linkedin, MessageCircle, Mail, Phone, MapPin, ChevronRight, Camera } from 'lucide-react';
 import Logo from './Logo';
@@ -17,7 +16,7 @@ const Footer: React.FC = () => {
                     <span className="font-serif text-xl font-bold tracking-[0.2em] text-white">BRIAN ISAJI</span>
                 </a>
                 <p className="text-gray-400 text-sm leading-relaxed font-light">
-                    Capturing authentic moments and transforming them into timeless visual stories. Based in Nairobi, available worldwide.
+                    Transforming ideas into timeless visual stories. Based in Nairobi, available worldwide for photography, consultancy, and creative direction.
                 </p>
                 <div className="flex gap-4 pt-4">
                     <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:scale-110 transition-all duration-300 border border-white/10 hover:border-accent">
@@ -51,7 +50,13 @@ const Footer: React.FC = () => {
             <div>
                 <h4 className="font-serif text-lg text-white mb-8">Services</h4>
                 <ul className="space-y-4">
-                    {['Wedding Photography', 'Portrait Sessions', 'Corporate Events', 'Real Estate', 'Commercial'].map((service) => (
+                    {[
+                      'Visual Storytelling',
+                      'Photo & Video Editing',
+                      'Creative Consultancy',
+                      'Editorial Support',
+                      'Project Management'
+                    ].map((service) => (
                         <li key={service}>
                             <a href="#contact" className="text-gray-400 hover:text-accent transition-colors text-sm flex items-center gap-2 group">
                                 <ChevronRight size={14} className="text-white/20 group-hover:text-accent" />
@@ -93,12 +98,8 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-[10px] text-gray-600 uppercase tracking-widest text-center md:text-left">
-                &copy; {new Date().getFullYear()} Brian Isaji Photography. All rights reserved.
+                &copy; {new Date().getFullYear()} Brian Isaji. All rights reserved. | Designed by <a href="https://novus-studios.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-accent transition-colors">Novus Studios</a>
             </p>
-            <div className="flex gap-6">
-                <a href="#" className="text-[10px] text-gray-600 hover:text-white uppercase tracking-widest transition-colors">Privacy Policy</a>
-                <a href="#" className="text-[10px] text-gray-600 hover:text-white uppercase tracking-widest transition-colors">Terms of Service</a>
-            </div>
         </div>
       </div>
 

@@ -19,16 +19,16 @@ const About: React.FC = () => {
 
             {/* Top Section: Split Layout */}
             <ModernAbout
-                imageSrc="https://images.unsplash.com/photo-1552168324-d612d77725e3?q=80&w=1000&auto=format&fit=crop"
+                imageSrc="https://i.postimg.cc/PxBw3Lkk/Brian-Isaji.jpg"
                 badgeText="Storyteller"
                 title="A Little About Me"
                 description={
                     <>
                         <p className="mb-6">
-                            I’m Brian Isaji, a photographer passionate about capturing the subtle, powerful moments that often go unnoticed. My work is inspired by real human connection — the quiet expressions, the gentle gestures, the stories behind every face and every place.
+                            I’m Brian Isaji, a Visual Storytelling Consultant passionate about capturing the subtle, powerful moments that often go unnoticed. My work is inspired by real human connection — the quiet expressions, the gentle gestures, the stories behind every face and every place.
                         </p>
                         <p className="mb-8">
-                            With a warm, natural style, I focus on creating photographs that feel honest, emotive, and timeless. Whether I’m documenting a portrait session, a celebration, or a creative project, my goal is always the same:
+                            With a warm, natural style, I focus on creating photographs and narratives that feel honest, emotive, and timeless. Whether I’m documenting a portrait session, providing creative consultancy, or editing visual content, my goal is always the same:
                             to make every image feel personal, meaningful, and beautifully crafted.
                         </p>
                         <div className="border-l-2 border-accent pl-6 py-1 mt-8">

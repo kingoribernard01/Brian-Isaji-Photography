@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SectionHeading from './SectionHeading';
 import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, Linkedin, ArrowRight, ChevronDown } from 'lucide-react';
@@ -78,12 +77,18 @@ const Contact: React.FC = () => {
 
              {/* Right Column: Form */}
              <div className="w-full lg:w-7/12 p-10 md:p-16 bg-[#050505]">
-                <form className="space-y-8">
+                <form action="https://formsubmit.co/brianisaji40@gmail.com" method="POST" className="space-y-8">
+                   <input type="hidden" name="_template" value="table" />
+                   <input type="hidden" name="_subject" value="New Inquiry from Website" />
+                   <input type="hidden" name="_captcha" value="false" />
+
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="group space-y-2">
                          <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 group-focus-within:text-accent transition-colors">Name</label>
                          <input 
                            type="text" 
+                           name="name"
+                           required
                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-accent focus:bg-white/10 focus:ring-1 focus:ring-accent/50 transition-all duration-300 hover:border-white/20" 
                            placeholder="Your Name" 
                          />
@@ -92,6 +97,8 @@ const Contact: React.FC = () => {
                          <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 group-focus-within:text-accent transition-colors">Email</label>
                          <input 
                            type="email" 
+                           name="email"
+                           required
                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-accent focus:bg-white/10 focus:ring-1 focus:ring-accent/50 transition-all duration-300 hover:border-white/20" 
                            placeholder="email@example.com" 
                          />
@@ -102,15 +109,18 @@ const Contact: React.FC = () => {
                       <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 group-focus-within:text-accent transition-colors">Subject</label>
                       <div className="relative">
                         <select 
+                          name="subject"
                           className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white appearance-none cursor-pointer focus:outline-none focus:border-accent focus:bg-white/10 focus:ring-1 focus:ring-accent/50 transition-all duration-300 hover:border-white/20"
                           defaultValue=""
+                          required
                         >
                           <option value="" disabled className="bg-secondary text-gray-400">Select a subject</option>
-                          <option value="Wedding" className="bg-secondary text-white">Wedding Photography</option>
-                          <option value="Portrait" className="bg-secondary text-white">Portrait Session</option>
-                          <option value="Event" className="bg-secondary text-white">Event Coverage</option>
-                          <option value="Commercial" className="bg-secondary text-white">Commercial / Brand</option>
-                          <option value="Real Estate" className="bg-secondary text-white">Real Estate</option>
+                          <option value="Visual Storytelling" className="bg-secondary text-white">Visual Storytelling & Photography</option>
+                          <option value="Post-Production" className="bg-secondary text-white">Photo Editing & Post-Production</option>
+                          <option value="Video Editing" className="bg-secondary text-white">Video Editing</option>
+                          <option value="Consultancy" className="bg-secondary text-white">Content & Creative Consultancy</option>
+                          <option value="Editorial" className="bg-secondary text-white">Editorial & Communication Support</option>
+                          <option value="Project Support" className="bg-secondary text-white">Project & Workflow Support</option>
                           <option value="Other" className="bg-secondary text-white">General Inquiry</option>
                         </select>
                         <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none w-4 h-4 group-hover:text-white transition-colors" />
@@ -120,7 +130,9 @@ const Contact: React.FC = () => {
                    <div className="group space-y-2">
                        <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 group-focus-within:text-accent transition-colors">Message</label>
                        <textarea 
+                         name="message"
                          rows={4} 
+                         required
                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-accent focus:bg-white/10 focus:ring-1 focus:ring-accent/50 transition-all duration-300 resize-none hover:border-white/20" 
                          placeholder="Tell me more about your project..."
                        ></textarea>

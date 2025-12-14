@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <div id="home">
       <HeroSection
-        title="Brian Isaji Photography"
+        title="Visual Storytelling"
         subtitle={{
           regular: "Capturing Life.",
           gradient: "Creating Art.",

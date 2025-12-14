@@ -5,6 +5,7 @@ import { NavItem, PortfolioItem, Project, Testimonial } from './types';
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Projects', href: '#projects' },
   { label: 'Testimonials', href: '#testimonials' },
@@ -14,122 +15,115 @@ export const NAV_ITEMS: NavItem[] = [
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   { 
     id: 1, 
-    title: 'Mara Sunset', 
-    category: 'Travel', 
-    imageUrl: 'https://images.unsplash.com/photo-1547471080-7cc2d5d88e93?q=80&w=1200&auto=format&fit=crop', 
+    title: 'Grazing Cattle', 
+    category: 'Conservation', 
+    imageUrl: 'https://i.postimg.cc/j5ch2Cs6/A-cow.jpg', 
     size: 'large' 
   },
   { 
     id: 2, 
-    title: 'Maasai Heritage', 
-    category: 'Culture', 
-    imageUrl: 'https://images.unsplash.com/photo-1533158307587-828f0a76ef93?q=80&w=1000&auto=format&fit=crop', 
+    title: 'The Homestead', 
+    category: 'Travel', 
+    imageUrl: 'https://i.postimg.cc/k4syGDJC/A-farm.jpg', 
     size: 'medium' 
   },
   { 
     id: 3, 
-    title: 'Nairobi Essence', 
-    category: 'Portrait', 
-    imageUrl: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1000&auto=format&fit=crop', 
+    title: 'University Lecture', 
+    category: 'Event', 
+    imageUrl: 'https://i.postimg.cc/PJqQwhJG/A-lecturer-at-Multimedia-University-of-Kenya.jpg', 
     size: 'medium' 
   },
   { 
     id: 4, 
-    title: 'Savannah Vows', 
-    category: 'Event', 
-    imageUrl: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1200&auto=format&fit=crop', 
+    title: 'Poultry Portrait', 
+    category: 'Conservation', 
+    imageUrl: 'https://i.postimg.cc/vTmtVMBJ/Chicken.jpg', 
     size: 'large' 
   },
   { 
     id: 5, 
-    title: 'Rift Valley Aerial', 
-    category: 'Drone', 
-    imageUrl: 'https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?q=80&w=1200&auto=format&fit=crop', 
+    title: 'Lush Fields', 
+    category: 'Travel', 
+    imageUrl: 'https://i.postimg.cc/SsdGRjyd/Farm.jpg', 
     size: 'medium' 
   },
   { 
     id: 6, 
-    title: 'The Guardian', 
-    category: 'Conservation', 
-    imageUrl: 'https://images.unsplash.com/photo-1577176735509-c124cb1c67d6?q=80&w=1000&auto=format&fit=crop', 
+    title: 'Ceremonial Gifting', 
+    category: 'Event', 
+    imageUrl: 'https://i.postimg.cc/yxNyZBxV/Gifting-session-at-Multimedia-University-of-Kenya.jpg', 
     size: 'small' 
   },
   {
     id: 7,
-    title: 'Safari Lodge Luxury',
-    category: 'Real Estate',
-    imageUrl: 'https://images.unsplash.com/photo-1618557343449-14693a0339a6?q=80&w=1200&auto=format&fit=crop',
+    title: 'Village Walk',
+    category: 'Culture',
+    imageUrl: 'https://i.postimg.cc/rmj9sz8Z/In-a-village.jpg',
     size: 'large'
   },
   {
     id: 8,
-    title: 'Samburu Colours',
-    category: 'Culture',
-    imageUrl: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=1000&auto=format&fit=crop',
+    title: 'Sunflower Season',
+    category: 'Conservation',
+    imageUrl: 'https://i.postimg.cc/PxyMJNt3/Of-sunflowers.jpg',
     size: 'small'
   },
   {
     id: 9,
-    title: 'Coastline from Above',
-    category: 'Drone',
-    imageUrl: 'https://images.unsplash.com/photo-1588612502804-d4df5582c76a?q=80&w=1200&auto=format&fit=crop', 
+    title: 'Lake Crossing',
+    category: 'Travel',
+    imageUrl: 'https://i.postimg.cc/pr1YQ759/On-a-boat.jpg', 
     size: 'medium'
   },
   {
     id: 10,
-    title: 'Contemporary Nairobi',
-    category: 'Real Estate',
-    imageUrl: 'https://images.unsplash.com/photo-1572970647614-23d9171f25b2?q=80&w=1200&auto=format&fit=crop',
+    title: 'The Flock',
+    category: 'Conservation',
+    imageUrl: 'https://i.postimg.cc/RFdThqS5/Sheep.jpg',
     size: 'medium'
   },
   {
     id: 11,
-    title: 'Lamu Streets',
-    category: 'Travel',
-    imageUrl: 'https://images.unsplash.com/photo-1565551694364-793575454b1f?q=80&w=1200&auto=format&fit=crop',
+    title: 'Guest Speaker',
+    category: 'Event',
+    imageUrl: 'https://i.postimg.cc/qq7x30q7/Speaker-at-Multimedia-University-of-Kenya.jpg',
     size: 'large'
   },
   {
     id: 12,
-    title: 'Wildlife Protector',
-    category: 'Conservation',
-    imageUrl: 'https://images.unsplash.com/photo-1618231189315-30a21456fb4f?q=80&w=1000&auto=format&fit=crop',
+    title: 'Closing Remarks',
+    category: 'Event',
+    imageUrl: 'https://i.postimg.cc/Kjsr7V3n/Vote-of-thanks-during-an-event.jpg',
     size: 'small'
   },
   {
     id: 13,
-    title: 'Golden Hour Joy',
-    category: 'Portrait',
-    imageUrl: 'https://images.unsplash.com/photo-1522512115668-c09775d6f424?q=80&w=1000&auto=format&fit=crop',
+    title: 'Mother Hen',
+    category: 'Conservation',
+    imageUrl: 'https://i.postimg.cc/Y0yfNVLh/Worth-shot-of-hens-and-chicks.jpg',
     size: 'medium'
-  },
-   {
-    id: 14,
-    title: 'Traditional Celebration',
-    category: 'Event',
-    imageUrl: 'https://images.unsplash.com/photo-1604325294565-1a8771383921?q=80&w=1200&auto=format&fit=crop',
-    size: 'large'
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'Golden Hour Portrait Series',
-    description: 'A heartfelt collection of portraits captured during the warm glow of sunset. Each frame was designed to highlight natural beauty, emotion, and authentic expression — celebrating people in their most effortless and honest moments.',
-    imageUrl: 'https://images.unsplash.com/photo-1520990044747-40910f461159?q=80&w=1600&auto=format&fit=crop'
+    title: 'Cultural Heritage & Community',
+    description: 'A vibrant documentation of ceremonial traditions at Multimedia University. This series focuses on the warmth of exchange, the texture of traditional attire, and the palpable joy of shared community moments—freezing the energy of the event in time.',
+    imageUrl: 'https://i.postimg.cc/yxNyZBxV/Gifting-session-at-Multimedia-University-of-Kenya.jpg'
   },
   {
     id: 2,
-    title: 'Urban Romance',
-    description: 'A cinematic exploration of love in the city — blending architecture, movement, and connection into a series of images that feel intimate and alive.',
-    imageUrl: 'https://images.unsplash.com/photo-1594912239384-a1420526a0a0?q=80&w=1600&auto=format&fit=crop'
+    title: 'The Silent Crossing',
+    description: 'An atmospheric exploration of travel and solitude. Captured on open waters, this project plays with negative space, reflection, and the quiet determination of the journey, highlighting the beauty found in transit and stillness.',
+    imageUrl: 'https://i.postimg.cc/pr1YQ759/On-a-boat.jpg'
   },
   {
     id: 3,
-    title: 'The Minimalist Studio Collection',
-    description: 'Clean, modern, and intentional. This studio project focuses on simplicity, shape, and light — revealing how powerful minimalism can be when paired with emotion.',
-    imageUrl: 'https://images.unsplash.com/photo-1611601322175-875848c84af6?q=80&w=1600&auto=format&fit=crop'
+    title: 'Rural Rhythms',
+    description: 'A conservation-focused narrative highlighting the timeless bond between pastoral life and nature. These frames celebrate the simple, grounded beauty of the countryside and its inhabitants, showcasing the raw texture and dignity of agricultural life.',
+    imageUrl: 'https://i.postimg.cc/j5ch2Cs6/A-cow.jpg'
   }
 ];
 

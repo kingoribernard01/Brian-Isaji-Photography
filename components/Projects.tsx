@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
 import { PROJECTS } from '../constants';
-import { ArrowUpRight } from 'lucide-react';
 
 const Projects: React.FC = () => {
   return (
@@ -50,13 +49,6 @@ const Projects: React.FC = () => {
                         <p className="font-sans text-gray-400 text-sm md:text-base font-light leading-relaxed mb-10">
                             {project.description}
                         </p>
-
-                        <a href="#" className="inline-flex items-center gap-2 group/btn">
-                             <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover/btn:bg-accent group-hover/btn:border-accent group-hover/btn:scale-110 transition-all duration-300">
-                                <ArrowUpRight className="w-5 h-5 text-white group-hover/btn:text-black transition-colors" />
-                             </div>
-                             <span className="text-xs font-bold uppercase tracking-widest text-white group-hover/btn:text-accent transition-colors">View Project</span>
-                        </a>
                     </div>
                 </div>
               </div>
