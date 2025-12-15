@@ -116,6 +116,7 @@ const Contact: React.FC = () => {
                         >
                           <option value="" disabled className="bg-secondary text-gray-400">Select a subject</option>
                           <option value="Visual Storytelling" className="bg-secondary text-white">Visual Storytelling & Photography</option>
+                          <option value="Events Planning" className="bg-secondary text-white">Events Planning & Organization</option>
                           <option value="Post-Production" className="bg-secondary text-white">Photo Editing & Post-Production</option>
                           <option value="Video Editing" className="bg-secondary text-white">Video Editing</option>
                           <option value="Consultancy" className="bg-secondary text-white">Content & Creative Consultancy</option>

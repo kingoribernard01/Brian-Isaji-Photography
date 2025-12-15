@@ -3,6 +3,7 @@ import { X, Calendar, Clock, User, Mail, ArrowRight, ArrowLeft, Check } from 'lu
 
 const services = [
   { name: 'Visual Storytelling & Photography', description: 'High-end photography for events, portraits, and commercial projects.' },
+  { name: 'Events Planning & Organization', description: 'Comprehensive event management, coordination, and execution.' },
   { name: 'Photo Editing & Post-Production', description: 'Professional retouching, color grading, and image enhancement.' },
   { name: 'Video Editing', description: 'Cinematic editing and sound design for compelling video narratives.' },
   { name: 'Content & Creative Consultancy', description: 'Strategic advice on brand identity and visual storytelling.' },

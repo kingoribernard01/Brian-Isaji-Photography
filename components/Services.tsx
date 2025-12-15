@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Sliders, Film, Lightbulb, FileText, Layers, ArrowUpRight } from 'lucide-react';
+import { Camera, Sliders, Film, Lightbulb, FileText, Layers, ArrowUpRight, CalendarCheck } from 'lucide-react';
 import SectionHeading from './SectionHeading';
 
 const Services: React.FC = () => {
@@ -61,6 +61,11 @@ const servicesData = [
     title: "Visual Storytelling",
     description: "Beyond simple photography, I craft narrative-driven imagery. Whether for commercial campaigns, events, or personal branding, I focus on capturing the 'why' behind the moment, ensuring every frame communicates emotion and intent.",
     icon: <Camera size={26} strokeWidth={1.5} />,
+  },
+  {
+    title: "Events Planning",
+    description: "End-to-end event organization and management. From conceptualization to on-the-day coordination, I ensure every detail is meticulously planned and executed, creating seamless and memorable experiences.",
+    icon: <CalendarCheck size={26} strokeWidth={1.5} />,
   },
   {
     title: "Photo Editing",

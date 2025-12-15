@@ -1,8 +1,11 @@
+
 export interface Project {
   id: number;
   title: string;
   description: string;
   imageUrl: string;
+  videoUrl?: string;
+  externalLink?: string;
 }
 
 export interface Testimonial {

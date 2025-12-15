@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
 import { PROJECTS } from '../constants';
+import { ExternalLink, Play } from 'lucide-react';
 
 const Projects: React.FC = () => {
   return (
@@ -19,14 +20,35 @@ const Projects: React.FC = () => {
             >
               <div className="relative overflow-hidden bg-[#080808] border border-white/5 rounded-2xl lg:h-[600px] flex flex-col lg:flex-row transition-all duration-500 hover:border-white/10 hover:shadow-2xl shadow-black">
                 
-                {/* Image Section */}
-                <div className="w-full lg:w-3/5 h-[300px] lg:h-full relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10" />
-                    <img 
-                      src={project.imageUrl} 
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                {/* Media Section (Image or Video Link) */}
+                <div className="w-full lg:w-3/5 h-[300px] lg:h-full relative overflow-hidden bg-black group/media">
+                    {project.videoUrl ? (
+                        <a 
+                            href={project.videoUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="block w-full h-full relative cursor-pointer"
+                        >
+                            <div className="absolute inset-0 bg-black/20 group-hover/media:bg-black/40 transition-colors duration-500 z-10" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-16 h-16 bg-accent/90 rounded-full flex items-center justify-center pl-1 shadow-xl group-hover/media:scale-110 transition-transform duration-300">
+                                <Play className="fill-primary text-primary w-6 h-6" />
+                            </div>
+                            <img 
+                              src={project.imageUrl} 
+                              alt={project.title}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover/media:scale-105"
+                            />
+                        </a>
+                    ) : (
+                        <>
+                            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none" />
+                            <img 
+                              src={project.imageUrl} 
+                              alt={project.title}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </>
+                    )}
                 </div>
 
                 {/* Content Section */}
@@ -39,7 +61,9 @@ const Projects: React.FC = () => {
                     <div className="relative z-10">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="w-8 h-[1px] bg-accent"></span>
-                            <span className="text-accent text-xs font-bold uppercase tracking-[0.2em]">Featured Case Study</span>
+                            <span className="text-accent text-xs font-bold uppercase tracking-[0.2em]">
+                                {project.videoUrl ? 'Video Production' : project.externalLink ? 'Documentation' : 'Featured Case Study'}
+                            </span>
                         </div>
 
                         <h3 className="font-serif text-3xl md:text-4xl text-white mb-6 leading-tight">
@@ -49,6 +73,30 @@ const Projects: React.FC = () => {
                         <p className="font-sans text-gray-400 text-sm md:text-base font-light leading-relaxed mb-10">
                             {project.description}
                         </p>
+
+                        {project.externalLink && (
+                            <a 
+                                href={project.externalLink} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-accent text-sm font-bold uppercase tracking-widest hover:text-white transition-colors group/link"
+                            >
+                                View Document
+                                <ExternalLink size={16} className="transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" />
+                            </a>
+                        )}
+                        
+                        {project.videoUrl && (
+                             <a 
+                                href={project.videoUrl} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-accent text-sm font-bold uppercase tracking-widest hover:text-white transition-colors group/link"
+                            >
+                                Watch Video
+                                <Play size={16} className="transition-transform group-hover/link:scale-110" />
+                            </a>
+                        )}
                     </div>
                 </div>
               </div>

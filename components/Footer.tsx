@@ -52,6 +52,7 @@ const Footer: React.FC = () => {
                 <ul className="space-y-4">
                     {[
                       'Visual Storytelling',
+                      'Events Planning',
                       'Photo & Video Editing',
                       'Creative Consultancy',
                       'Editorial Support',

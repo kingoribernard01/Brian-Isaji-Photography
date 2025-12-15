@@ -115,15 +115,36 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
+    title: 'Event Highlights: Visual Pulse',
+    description: 'A cinematic recap capturing the essence of live events. From the anticipation of the crowd to the peak moments of performance, this reel demonstrates a keen eye for timing, motion, and the electric atmosphere of the day.',
+    imageUrl: 'https://img.youtube.com/vi/NKTE3OrfQOA/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/NKTE3OrfQOA'
+  },
+  {
+    id: 3,
     title: 'The Silent Crossing',
     description: 'An atmospheric exploration of travel and solitude. Captured on open waters, this project plays with negative space, reflection, and the quiet determination of the journey, highlighting the beauty found in transit and stillness.',
     imageUrl: 'https://i.postimg.cc/pr1YQ759/On-a-boat.jpg'
   },
   {
-    id: 3,
+    id: 4,
+    title: 'Corporate Feature: Brand Story',
+    description: 'A polished visual narrative designed for corporate communication. This project intertwines interviews with B-roll footage to construct a compelling story that aligns with brand identity and strategic messaging.',
+    imageUrl: 'https://img.youtube.com/vi/Db7ltsyqXaw/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/Db7ltsyqXaw'
+  },
+  {
+    id: 5,
     title: 'Rural Rhythms',
     description: 'A conservation-focused narrative highlighting the timeless bond between pastoral life and nature. These frames celebrate the simple, grounded beauty of the countryside and its inhabitants, showcasing the raw texture and dignity of agricultural life.',
     imageUrl: 'https://i.postimg.cc/j5ch2Cs6/A-cow.jpg'
+  },
+  {
+    id: 6,
+    title: 'Strategic Planning Documentation',
+    description: 'A comprehensive overview of project workflows and event organization strategies. This document showcases the meticulous planning and structural foundation that goes into successful large-scale productions.',
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop', // Placeholder for document
+    externalLink: 'https://drive.google.com/file/d/1jCQ7YJYfdcG0tThoQO9ve059P6UgRAVL/view'
   }
 ];
 
